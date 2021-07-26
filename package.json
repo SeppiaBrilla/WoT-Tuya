@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@node-wot/binding-http": "^0.7.6",
+    "@node-wot/core": "^0.7.6",
+    "@tuya/tuya-connector-nodejs": "^2.0.3",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.2"
+  }
+}
