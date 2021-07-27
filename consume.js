@@ -11,7 +11,7 @@ const WoTHelpers = new Helpers(servient);
 
 function testNormal(){
 
-        WoTHelpers.fetch("http://localhost:8080/smart-bulb-by-tuya").then(async (td) => {
+        WoTHelpers.fetch("http://localhost:8080/smart-bulb-rgbcw").then(async (td) => {
             try {
                 servient.start().then(async (WoT) => {
                     let thing = await WoT.consume(td);

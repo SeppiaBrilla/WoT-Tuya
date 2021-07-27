@@ -85,14 +85,15 @@ class Device {
     async deviceFunctions(){
         let result = await this.api.getApi().request({
             method: 'GET',
-            path: `/v1.0/devices/${this.id}/specifications`
+            path: `/v1.0/devices/${this.id}/functions`
         });
         
         if (!result.success) {
             throw new Error(`${result.code}: ${result.msg}`);
         }
         else{
-            return (result.result).functions; 
+            console.log(result)
+            return result; 
         }
     }
 
